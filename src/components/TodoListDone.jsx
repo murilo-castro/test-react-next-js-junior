@@ -14,7 +14,11 @@ const TodosListDone = () => {
       return <TodoListItem key={todo.id} todo={todo}></TodoListItem>;
   });
 
-  return <ul>{data}</ul>;
+  return (
+    <div className="bg-task-done shadow-purple rounded-lg">
+      <ul>{data}</ul>
+    </div>
+  );
 };
 
 export default TodosListDone;
