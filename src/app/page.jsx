@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import Header from '@/components/Header';
 import TodosList from '@/components/TodosList';
+import TodosListDone from '@/components/TodoListDone';
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <Header />
       <div>
         <ul>
+          <TodosListDone />
           <TodosList />
         </ul>
       </div>

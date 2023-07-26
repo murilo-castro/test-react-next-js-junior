@@ -30,17 +30,28 @@ export const TodosContextProvider = ({ children }) => {
   };
 
   const updateTodo = (id, title) => {
-    todos.map((todo) => {
+    const newTodos = todos.map((todo) => {
       if (todo.id === id) {
-        todos.splice(todo.id - 1, 1);
-        setTodos([...todos, { ...todo, title }]);
+        return { ...todo, title };
       }
+      return todo;
     });
-    console.log(todos);
+    setTodos(newTodos);
+  };
+  const updateDone = (id, done) => {
+    const newTodos = todos.map((todo) => {
+      if (todo.id === id) {
+        const isDone = !done;
+        console.log(isDone);
+        return { ...todo, done: !done };
+      }
+      return todo;
+    });
+    setTodos(newTodos);
   };
 
   return (
-    <TodosContext.Provider value={{ todos, saveTodo, updateTodo }}>
+    <TodosContext.Provider value={{ todos, saveTodo, updateTodo, updateDone }}>
       {children}
     </TodosContext.Provider>
   );
