@@ -26,10 +26,21 @@ export const TodosContextProvider = ({ children }) => {
     };
 
     setTodos([...todos, newTodo]);
+    localStorage.setItem('tasks', JSON.stringify(todos));
+  };
+
+  const updateTodo = (id, title) => {
+    todos.map((todo) => {
+      if (todo.id === id) {
+        todos.splice(todo.id - 1, 1);
+        setTodos([...todos, { ...todo, title }]);
+      }
+    });
+    console.log(todos);
   };
 
   return (
-    <TodosContext.Provider value={{ todos, saveTodo, setTodos }}>
+    <TodosContext.Provider value={{ todos, saveTodo, updateTodo }}>
       {children}
     </TodosContext.Provider>
   );
