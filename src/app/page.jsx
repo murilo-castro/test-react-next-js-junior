@@ -9,12 +9,8 @@ const Home = () => {
   return (
     <main className="p-[2rem] max-w-7xl mx-auto">
       <Header />
-      <div>
-        <ul>
-          <TodosListDone />
-          <TodosList />
-        </ul>
-      </div>
+      <TodosListDone />
+      <TodosList />
       <Link href="creat-task" className="w-full">
         <button className="min-h-[76px] min-w-full rounded-lg bg-task-done text-white shadow-purple mt-5">
           Creat Task
