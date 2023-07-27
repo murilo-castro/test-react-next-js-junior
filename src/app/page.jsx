@@ -7,7 +7,7 @@ import Button from '@/components/Button';
 
 const Home = () => {
   return (
-    <main className="flex flex-col justify-between p-[2rem] min-h-screen max-w-7xl mx-auto">
+    <main className="flex flex-col justify-between p-[2rem] min-h-[312px] max-h-screen max-w-7xl mx-auto">
       <Header />
       <TodoListAll />
       <Button />
