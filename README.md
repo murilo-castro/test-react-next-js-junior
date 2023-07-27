@@ -1,5 +1,7 @@
 <h1 align="center">:file_cabinet: Todo List</h1>
 
+<img src="/public/desktop.png" width="100px;" alt="Foto de Murilo Castro no Git Hub"/>
+
 ## :memo: Descrição
 
 Esse é um projeto de lista de tarefas onde sera possível criar, visualizar, editar e excluir tarefas.
@@ -14,7 +16,10 @@ Os dados serão persistidos no local storage.
 
 ## :wrench: Tecnologias utilizadas
 
-- Tecnologia;
+- Nextjs;
+- Reactjs;
+- Tailwindcss;
+- Javascript;
 
 ## :rocket: Rodando o projeto
 
@@ -48,14 +53,14 @@ Você ja tem tudo o que precisa agora é só digitar algum dos comando abaixo:
 
 ## :soon: Implementação futura
 
-- O que será implementado na próxima sprint?
+- Melhoria no layout e componentização do projeto
 
 ## :handshake: Colaboradores
 
 <table>
   <tr>
     <td align="center">
-      <a href="http://github.com/tatialveso">
+      <a href="https://github.com/murilo-castro">
         <img src="https://avatars.githubusercontent.com/u/97067654?s=400&u=ce154b694c4d1c0fca9e1141d8993bfd52ec2771&v=4" width="100px;" alt="Foto de Murilo Castro no Git Hub"/><br>
         <sub>
           <b>Murilo Castro</b>
