@@ -15,7 +15,7 @@ const TodoListAll = () => {
   }, 0);
 
   return (
-    <main className="flex flex-col gap-7">
+    <div className="flex flex-col gap-7 min-h-[472px]">
       <div className="flex justify-between">
         <h1 className="text-2xl">
           Task <br />
@@ -25,13 +25,13 @@ const TodoListAll = () => {
           {doneCount}/{todos.length} Task finished
         </p>
       </div>
-      <div className="flex flex-col gap-9">
+      <div className="flex flex-col gap-9 overflow-y-scroll mt-9 h-[392px]">
         {doneCount > 0 && <TodosListDone />}
         <div>
           <TodosList />
         </div>
       </div>
-    </main>
+    </div>
   );
 };
 

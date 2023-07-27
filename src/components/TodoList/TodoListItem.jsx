@@ -8,9 +8,9 @@ const TodoListItem = ({ todo }) => {
   const { updateDone } = useContext(TodosContext);
 
   return (
-    <div className="flex gap-5 justify-between items-center min-h-[86px] p-5">
+    <div className="flex gap-5 justify-between items-center min-h-[75px] px-4">
       <Checkbox
-        className="flex gap-5 justify-between items-center min-h-[86px] p-5 accent-place"
+        className="accent-place"
         defaultChecked={todo.done}
         onClick={(e) => updateDone(todo.id, todo.done)}
         sx={{
