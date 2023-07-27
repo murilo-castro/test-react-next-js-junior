@@ -23,7 +23,7 @@ const UpdateTask = ({ params }) => {
   };
 
   return (
-    <div className="flex min-h-[372px] max-h-screen flex-col justify-between p-[30px] pl-[18px] max-w-7xl mx-auto">
+    <div className="flex min-h-[372px] max-h-full flex-col justify-between p-[30px] pl-[18px] max-w-7xl mx-auto">
       <div className="flex items-center justify-between">
         <NavigateHome>
           Edit <br /> task
