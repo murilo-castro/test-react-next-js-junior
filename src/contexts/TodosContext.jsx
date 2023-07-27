@@ -59,7 +59,6 @@ export const TodosContextProvider = ({ children }) => {
     const newTodos = todos.map((todo) => {
       if (todo.id === id) {
         const isDone = !done;
-        console.log(isDone);
         return { ...todo, done: !done };
       }
       return todo;

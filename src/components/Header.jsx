@@ -6,7 +6,7 @@ const Header = () => {
   const fullDate = dayjs().format('DD MMMM YYYY');
 
   return (
-    <header className="flex justify-between mb-5">
+    <header className="flex justify-between mt-[20px] mb-[30px]">
       <div>
         <h3 className="text-primary text-lg font-bold">{day}</h3>
         <p className="text-xs text-date">{fullDate}</p>
