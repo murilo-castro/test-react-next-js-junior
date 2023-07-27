@@ -8,7 +8,7 @@ import { TrashIcon } from '@/components/TrashIcon';
 import { TaskIcon } from '@/components/TaskIcon';
 
 const UpdateTask = ({ params }) => {
-  const { updateTodo } = useContext(TodosContext);
+  const { updateTodo, deleteTodo } = useContext(TodosContext);
   const [input, setInput] = useState('');
   const { id } = params;
   const router = useRouter();
@@ -31,7 +31,7 @@ const UpdateTask = ({ params }) => {
         <button
           type="button"
           onClick={() => {
-            deleteTask(id);
+            deleteTodo(Number(id));
             router.push('/');
           }}
         >

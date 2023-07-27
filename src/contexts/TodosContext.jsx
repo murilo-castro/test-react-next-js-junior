@@ -15,18 +15,27 @@ export const TodosContextProvider = ({ children }) => {
   }, []);
 
   useEffect(() => {
-    if (todos.length > 0) localStorage.setItem('tasks', JSON.stringify(todos));
+    if (todos.length > 0) {
+      localStorage.setItem('tasks', JSON.stringify(todos));
+    }
   }, [todos]);
 
   const saveTodo = (title) => {
+    const id = Number(localStorage.getItem('newId'));
+    let newId;
+    if (id) {
+      newId = id + 1;
+    } else {
+      newId = 1;
+    }
     const newTodo = {
-      id: todos.length + 1,
+      id: newId,
       title: title,
       done: false,
     };
 
     setTodos([...todos, newTodo]);
-    localStorage.setItem('tasks', JSON.stringify(todos));
+    localStorage.setItem('newId', JSON.stringify(newId));
   };
 
   const updateTodo = (id, title) => {
@@ -38,6 +47,14 @@ export const TodosContextProvider = ({ children }) => {
     });
     setTodos(newTodos);
   };
+
+  const deleteTodo = (id) => {
+    window.localStorage.removeItem('tasks');
+    const newTodos = todos.filter((todo) => todo.id !== id);
+    console.log(newTodos);
+    setTodos(newTodos);
+  };
+
   const updateDone = (id, done) => {
     const newTodos = todos.map((todo) => {
       if (todo.id === id) {
@@ -51,7 +68,9 @@ export const TodosContextProvider = ({ children }) => {
   };
 
   return (
-    <TodosContext.Provider value={{ todos, saveTodo, updateTodo, updateDone }}>
+    <TodosContext.Provider
+      value={{ todos, saveTodo, updateTodo, updateDone, deleteTodo }}
+    >
       {children}
     </TodosContext.Provider>
   );

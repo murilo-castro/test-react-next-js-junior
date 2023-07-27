@@ -7,8 +7,6 @@ const TodosListDone = () => {
 
   todos.sort((a, b) => a.id - b.id);
 
-  console.log(todos);
-
   const data = todos.map((todo) => {
     if (todo.done)
       return <TodoListItem key={todo.id} todo={todo}></TodoListItem>;
