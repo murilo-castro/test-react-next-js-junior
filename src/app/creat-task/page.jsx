@@ -21,7 +21,7 @@ const CreatTask = () => {
   };
 
   return (
-    <div className="flex min-h-screen flex-col justify-between p-[30px] pl-[18px] max-w-7xl mx-auto">
+    <div className="flex min-h-[372px] max-h-screen flex-col justify-between p-[30px] pl-[18px] max-w-7xl mx-auto">
       <NavigateHome>
         Create <br /> task
       </NavigateHome>
@@ -47,7 +47,7 @@ const CreatTask = () => {
             />
           </label>
         </div>
-        <button className="min-h-[76px] min-w-full rounded-lg bg-task-done text-white shadow-purple mt-5 mb-5">
+        <button className="min-h-[55px] min-w-full rounded-lg bg-task-done text-white shadow-purple mt-5 mb-10">
           Creat task
         </button>
       </form>

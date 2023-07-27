@@ -23,7 +23,7 @@ const UpdateTask = ({ params }) => {
   };
 
   return (
-    <div className="flex min-h-screen flex-col justify-between p-[30px] pl-[18px] max-w-7xl mx-auto">
+    <div className="flex min-h-[372px] max-h-screen flex-col justify-between p-[30px] pl-[18px] max-w-7xl mx-auto">
       <div className="flex items-center justify-between">
         <NavigateHome>
           Edit <br /> task
@@ -60,7 +60,7 @@ const UpdateTask = ({ params }) => {
             />
           </label>
         </div>
-        <button className="min-h-[76px] min-w-full rounded-lg bg-task-done text-white shadow-purple mt-5 mb-5">
+        <button className="min-h-[55px] min-w-full rounded-lg bg-task-done text-white shadow-purple mt-5 mb-10">
           Edit task
         </button>
       </form>
