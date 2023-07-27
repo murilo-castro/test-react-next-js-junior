@@ -27,7 +27,7 @@ const TodoListAll = () => {
       </div>
       <div className="flex flex-col gap-9 overflow-y-scroll mt-4 mb-3 min-h-[312px]">
         {doneCount > 0 && <TodosListDone />}
-        <div>
+        <div className="bg-task-to-do">
           <TodosList />
         </div>
       </div>
