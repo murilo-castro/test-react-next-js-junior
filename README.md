@@ -1,6 +1,6 @@
 <h1 align="center">:file_cabinet: Todo List</h1>
 
-<img src="/public/desktop.png" width="100px;" alt="Foto de Murilo Castro no Git Hub"/>
+<img src="/public/desktop.png" alt="Foto de Murilo Castro no Git Hub"/>
 
 ## :memo: Descrição
 
