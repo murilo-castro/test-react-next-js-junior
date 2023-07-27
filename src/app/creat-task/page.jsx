@@ -48,7 +48,7 @@ const CreatTask = () => {
           </label>
         </div>
         <button className="min-h-[76px] min-w-full rounded-lg bg-task-done text-white shadow-purple mt-5">
-          Creat Task
+          Creat task
         </button>
       </form>
     </div>
