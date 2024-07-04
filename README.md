@@ -28,29 +28,29 @@ Os dados serão persistidos no local storage.
 Para rodar o repositório é necessário clonar o mesmo, dar o seguinte comando para iniciar o projeto:
 
 ```
-<git clone https://github.com/murilo-castro/test-react-next-js-junior>
+git clone https://github.com/murilo-castro/test-react-next-js-junior
 ```
 
 Em seguida entre na pasta do projeto com o seguinte comando:
 
 ```
-<cd test-react-next-js-junior>
+cd test-react-next-js-junior
 ```
 
 Logo após é necessário instalar as dependêcias do projeto, para isso o comando abaixo:
 
 ```
-<npm install>
+npm install
 ```
 
 Você ja tem tudo o que precisa agora é só digitar algum dos comando abaixo:
 
 ```
-<Yarn dev>
+Yarn dev
 ```
 
 ```
-<npm run dev>
+npm run dev
 ```
 
 ## :soon: Implementação futura
